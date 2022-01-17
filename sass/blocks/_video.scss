@@ -1,0 +1,56 @@
+.video {
+    min-height: 945px;
+    padding-top: 100px;
+    &__title {
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        text-align: center;
+        color: $gold;
+        position: relative;
+        margin: 0;
+    }
+    &__title::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 350px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 350px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__player {
+        width: 1400px;
+        height: 705px;
+        background-image: url('../img/bg/video.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-top: 60px;
+        position: relative;
+    }
+    &__button {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        path:hover {
+            fill: #BDAE82;
+        }    
+    }
+}

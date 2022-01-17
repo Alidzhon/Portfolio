@@ -1,0 +1,97 @@
+.price {
+    min-height: 845px;
+    padding-top: 100px;
+    &__title {
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        text-align: center;
+        color: $gold;
+        position: relative;
+        margin: 0;
+    }
+    &__title::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 350px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 350px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 60px;
+    }
+    &__item {
+        width: 450px;
+        height: 505px;
+        border: 3px solid #bdae82;
+        padding-top: 43px;
+    }
+    &__service {
+        display: block;
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 56px;
+        text-align: center;
+        color: $white;
+        text-align: center;
+    }
+    &__cost {
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 48px;
+        color: $gold;
+        text-align: center;
+        margin-top: 20px;
+    }
+    &__text {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 36px;
+        color: $white;
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+    &__button {
+        width: 220px;
+        height: 55px;
+        background-color: $gold;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        color: $bg-dark;
+        transition: 0.6s ease-in-out;
+    }
+    &__button:hover {
+        color: $white;
+    }
+}

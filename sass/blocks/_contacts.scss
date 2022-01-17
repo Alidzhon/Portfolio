@@ -1,0 +1,82 @@
+.contacts {
+    min-height: 700px;
+    background-image: url('../img/bg/contacts.jpg');
+    background-repeat: no-repeat;
+    background-size: auto 700px;
+    background-position: center center;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 60px;
+        padding-right: 20px;
+    }
+    &__title {
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        color: $gold;
+        text-align: start;
+        margin: 0 224px 0 0;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        margin-top: 40px;
+        input {
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            border: 3px solid #BDAE82;
+            border-radius: 0px;
+            padding: 5px 20px 5px 20px;
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 40px;
+            color: $gold;
+            margin-bottom: 20px;
+        }
+        input::placeholder {
+            color: $gold;
+        }
+    }
+    &__textarea {
+        height: 100px;
+        background: rgba(0, 0, 0, 0.5);
+        border: 3px solid $gold;
+        border-radius: 0px;
+        padding: 10px 20px 10px 20px;
+        resize: none;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        color: $gold;
+    }
+    &__textarea::placeholder {
+        color: $gold;
+    }
+    &__button {
+        width: 220px;
+        height: 55px;
+        background-color: $gold;
+        border-radius: 0px;
+        cursor: pointer;
+        margin-top: 30px;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        color: $bg-dark;
+        transition: 0.6s ease-in-out;
+    }
+    &__button:hover {
+        color: $white;
+    }
+}

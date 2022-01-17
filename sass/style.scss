@@ -1,0 +1,21 @@
+@import 'base/variables';
+html {
+    scroll-behavior: smooth; 
+  }
+body {
+    background-color: $bg-dark;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/skills';
+@import 'blocks/portfolio';
+@import 'blocks/video';
+@import 'blocks/price';
+@import 'blocks/contacts';
+@import 'blocks/footer';

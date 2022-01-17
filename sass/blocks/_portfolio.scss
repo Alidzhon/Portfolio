@@ -1,0 +1,89 @@
+.portfolio {
+    padding-top: 100px;
+    &__title {
+        font-family: $second-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 80px;
+        text-align: center;
+        color: $gold;
+        position: relative;
+        margin: 0;
+    }
+    &__title::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 330px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__title::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 330px;
+        width: 274px;
+        height: 2px;
+        background-color: $gold;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+    &__button {
+        width: 220px;
+        height: 55px;
+        background: transparent;
+        border: 2px solid $gold;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        color: $gold;
+        cursor: pointer;
+        margin-left: 5px;
+        transition: 0.6s ease-in-out;
+    }
+    &__button:hover {
+        color: $white;
+    }
+    &__button:first-child {
+        margin-left: 0;
+    }
+    &__button_active {
+        background-color:  $gold;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 40px;
+        color: $bg-dark; 
+    }
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__image {
+        width: 450px;
+        height: 560px;
+    }
+    &__image:nth-child(4) {
+        margin-top: 25px;
+    }
+    &__image:nth-child(5) {
+        margin-top: 25px;
+    }
+    &__image:nth-child(6) {
+        margin-top: 25px;
+    }
+}

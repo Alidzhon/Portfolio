@@ -1,0 +1,72 @@
+.footer {
+    padding: 50px 0 50px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__year {
+        display: flex;
+        align-items: center;
+        span {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 50px;
+            color: $white;
+            margin-right: 20px;
+            transition: 0.6s ease-in-out;
+            cursor: pointer;
+        }
+        span:hover {
+            color: #CCBA8D;
+        }
+        a {
+            font-family: $main-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 50px;
+            color: $white;
+            text-decoration: none;
+            transition: 0.6s ease-in-out;
+        }
+        a:hover {
+            color: #CCBA8D;
+        }
+    }
+    &__rsschool {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 50px;
+        color: $white;
+        text-decoration: none;
+        transition: 0.6s ease-in-out;
+    }
+    &__rsschool:hover {
+        color: #CCBA8D;
+    }
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__item {
+        margin-left: 20px;
+    }
+    &__item:first-child {
+        margin-left: 0;
+    }
+    &__link {
+        svg {
+            transition: 0.6s ease-in-out;
+            path:hover {
+                fill: #CCBA8D;
+            }
+        }
+    }
+}
